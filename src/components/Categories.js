@@ -4,10 +4,15 @@ const Categories = ({ categories, filterItems }) => {
   return (
     <div className="categories">
       {categories.map((category, index) => (
-        <button  id={`button-filter-${index}`} key={index} onClick={() => filterItems(category)}>
+        <button  id={`filter-btn-${index}`} key={index} onClick={() => filterItems(category)}>
           {category}
         </button>
       ))}
+
+      {/* <button>All</button>
+      <button id='filter-b'>Breakfast</button>
+      <button>Lunch</button>
+      <button>Shakes</button> */}
     </div>
   );
 };
