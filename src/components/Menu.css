@@ -1,0 +1,52 @@
+/* Container for the menu items */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  /* Individual menu item */
+  .menu-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-item h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-item p {
+    font-size: 14px;
+  }
+  
+  /* Categories container */
+  .categories {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .categories button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .categories button:hover {
+    background-color: #f0f0f0;
+  }
+  
