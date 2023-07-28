@@ -27,7 +27,7 @@ const Menu = () => {
     <div>
       <h1>Menu</h1>
       <Categories categories={categories} filterItems={filterItems} />
-      <div className="menu-items">
+      <div id="main">
         {menuItems.map((item) => (
           <MenuItem key={item.id} item={item} />
         ))}
