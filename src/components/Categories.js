@@ -1,18 +1,17 @@
 import React from 'react';
 
-const Categories = ({ categories, filterItems }) => {
+const Categories = ({ filterItems }) => {
+
+    function callback(category){
+       filterItems(category);
+    }
+
   return (
     <div className="categories">
-      {categories.map((category, index) => (
-        <button  id={`filter-btn-${index}`} key={index} onClick={() => filterItems(category)}>
-          {category}
-        </button>
-      ))}
-
-      {/* <button>All</button>
-      <button id='filter-b'>Breakfast</button>
-      <button>Lunch</button>
-      <button>Shakes</button> */}
+      <button onClick={()=>callback('all')}>All</button>
+      <button id='filter-btn-1' onClick={()=>callback('breakfast')}>Breakfast</button>
+      <button id='filter-btn-2' onClick={()=>callback('lunch')}>Lunch</button>
+      <button id='filter-btn-3' onClick={()=>callback('shakes')}>Shakes</button>
     </div>
   );
 };
